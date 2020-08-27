@@ -909,6 +909,7 @@ form button {
     bottom: -320px;
     left: 0;
     margin: auto;
+    padding: 0;
 }
 
 .slick-dots li {
