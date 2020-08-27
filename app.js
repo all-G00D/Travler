@@ -71,6 +71,11 @@ $(function () {
         dots: true,
         infinite: true,
         autoplay: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDots: true,
+        draggable: true,
+        swipe: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
