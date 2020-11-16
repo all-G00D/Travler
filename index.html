@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Recursive:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//https:cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//https:cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <title>Travler</title>
 </head>
 
@@ -158,8 +158,8 @@
                     </div>
 
                     <div class="quicklinks">
-                        <p>Quicklinks</p>
                         <a href="#" onclick="return false">
+                            <p>Quicklinks</p>
                             <div class="quicklinks_loc">
                                 <i class="fa fa-map-marker fa-2x" aria-hidden="true" data-tooltip="Quicklinks"></i>
                             </div>
@@ -167,23 +167,16 @@
                     </div>
 
                     <div class="select">
-                        <p>Select from dropdown</p>
-                        <div class="select_loc" data-tooltip="Select from dropdown">
-                            <a href="#" onclick="return false">
-                                <div class="angle-up">
-                                    <i class="fa fa-angle-up fa-1x" aria-hidden="true"></i>
-                                </div>
-                            </a>
-                            <a href="#" onclick="return false">
-                                <div class="angle-down">
-                                    <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i>
-                                </div>
-                            </a>
-                        </div>
+                        <label class="visually-hidden" for="select__switch">Select from dropdown</label>
+                        <select class="select__switch" name="select__switch" id="select__switch">
+                            <option value="select-1">Select from dropdown</option>
+                            <option value="select-2">Select from dropdown 2</option>
+                            <option value="select-3">Select from dropdown 3</option>
+                        </select>
                     </div>
 
-                    <form action="#" method="get" onclick="return false">
-                        <input name="s" placeholder="Search for somthing here" type="search">
+                    <form action="#" method="get">
+                        <input name="s" placeholder="Search for somthing here" type="search" required>
                         <button type="submit">
                             <span class="clock">
                                 <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
